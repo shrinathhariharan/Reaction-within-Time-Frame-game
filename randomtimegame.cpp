@@ -51,6 +51,12 @@ void runTimer()
     }
 }
 
+void resetDifficulty(int& difficulty)
+{
+    if (difficulty < 1)
+        ++difficulty;
+}
+
 void startGame()
 {
     using namespace std::chrono;
@@ -138,4 +144,5 @@ int main()
 
     return 0;
 }
+
 
